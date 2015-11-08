@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-  var generatedNumber
-  var guess 
 
 	/*--- Display information modal box ---*/
   	$(".what").click(function(){
@@ -14,34 +12,19 @@ $(document).ready(function(){
   		$(".overlay").fadeOut(1000);
   	});
 
-  	/*--- New Game ---*/
-    function newGame (); {
-        
-    }
+  // new game & generate random number
+  var randomNum = 0;
+  function targetInt () {
+      randomNum = Math.floor((Math.random() * 100) + 1);
+    };
+  console.log(randomNum);
 
-  	
+  var newGame 
 
- 	// Generate Random Number 
-	function generateNumber() {
 
-		var generatedNumber = Math.floor((Math.random()*100)+1);
-		console.log("Generated Random Number = "+ generatedNumber);
-
-		return generatedNumber;
-	}
-  console.log (generatedNumber);
 });
 
-  // guesses 
-  if (guess > (generatedNumber + 30)) {
-    alert('ICE COLD');
-  } else if (guess < (generatedNumber + 30) && >(generatedNumber + 20)) {
-    alert('COLD');
-  } else if (guess < (generatedNumber + 20) && >(generatedNumber + 10)) {
-    alert('WARM');
-  } else if (guess < (generatedNumber + 10)) {
-    alert('HOT');
-  }
+ 
 
 
 

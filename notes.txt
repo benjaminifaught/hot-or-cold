@@ -1,0 +1,25 @@
+1. generate a random integer between 1 and 100 (whole numbers)
+	-- integer variable 
+			--"target"
+	is there a funciton for this? 
+		YES! math.random()
+			random * 100 and add 1
+2. user inputs guess
+3. new game generates new random number (see 1.)
+4. user feedback
+	distance between target number and user guess 
+	if distance is 0 we found it
+	if distance is large then we are cold
+	use math.abs() to make sure it is positve even if distance is negative 
+
+5. define -- hot, warm, cold, very cold 
+	--if (Math.abs(target-guess) < 10)... etc.
+7. keep track of users guesses
+
+
+
+
+**jquery routine to show and hide directions**
+
+
+take difference of target and guess 
