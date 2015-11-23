@@ -17,9 +17,19 @@
 7. keep track of users guesses
 
 
-
-
 **jquery routine to show and hide directions**
 
 
 take difference of target and guess 
+
+1. Start a new game
+2. Generate a random number (the target)
+3. Start a loop 
+      3a. Ask the user to guess
+      3b. Display the guess in the green area
+      3c. Display the count of guesses in the Guess #x! area
+      3d. Compare guess vs target
+      3e. Display the appropriate message in the Red area
+end of the loop
+
+Note: If the user clicks "+New Game" at any time, go back to #1 and start all over.
